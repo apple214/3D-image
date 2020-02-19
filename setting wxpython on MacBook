@@ -1,10 +1,10 @@
 When we try to use wxpython on macbook, it will show this error:"This program needs access to the screen. Please run with a Framework build of python, and only when you are logged in on the main display of your Mac.", even if you have already installed wxpython the normal way you install other python packages. And if you google this problem like I did, you will find that python in mac cannot handle it, you have to use pythonw (.py to ,pyw).
 I took this suggestion, and tried to use pythonw to run the demo again, this problem seems gone, but somehow it was still not working.
 Then I tried multiple solutions given online, none of them worked (I'll skip those failed attempts). That's when I realize the easiest way for me is to build an virtual environment to get a "fake windows". Now I'll show you how I did it.
-First of all, donwload VMware: https://www.vmware.com/products/fusion/fusion-evaluation.html
+First of all, download VMware: https://www.vmware.com/products/fusion/fusion-evaluation.html
 and ISO document: https://www.microsoft.com/en-ca/software-download/
 You can choose one you like, for example I downloaded the Fusion 11.5 Pro and Windows 10.
 Then install the VMware and drag the ISO you just downloaded into it. Meanwhile, don't forget about all those security settings of your mac. Just click those checkmarks. Give a cute name to your virtual environment and wait and wait and wait...
-After your windows virtual encironment is done, install python in it. I installed python3 and a pycharm. Also don't forget the packages you need. To save your time, just copy this and put it into your terminal:
+After your windows virtual environment is done, install python in it. I installed python3 and a pycharm. Also don't forget the packages you need. To save your time, just copy this and put it into your terminal:
 pip install wxpython PyOpenGL PyOpenGL_accelerate
 Try to run the demo, hopefully this time it will work, like mine.
